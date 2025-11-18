@@ -1,0 +1,28 @@
+{
+  "extends": "typescript-react",
+  "srcDir": "src",
+  "entries": {
+    "index": "src/index.tsx"
+  },
+  "pages": {
+    "index": {
+      "template": "src/index.ejs",
+      "entries": "index",
+      "path": ""
+    }
+  },
+  "distDir": "dist",
+  "deploy": {
+    "config": {
+      "accessKey": "{{process.env.FEC_BUILDER_ACCESS_KEY}}",
+      "secretKey": "{{process.env.FEC_BUILDER_SECRET_KEY}}",
+      "bucket": "pili-player-demo"
+    }
+  },
+  "optimization": {
+    "highQualitySourceMap": true
+  },
+  "engines": {
+    "builder": "^2.7.1"
+  }
+}
