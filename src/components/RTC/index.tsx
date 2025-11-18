@@ -60,7 +60,7 @@ export default observer(function RTC({ url: urlFormProps }: Props) {
         1.WHEP (WebRTC HTTP Egress Protocol) 拉流地址，通常以 <code>https://</code> 开头。
       </span><br />
       <span>
-        2.请将拉流地址中的流名（如 minutest000）改为两人1v1连线对端的推流名。在一人自测时，也可以改为左侧的推流名。
+        2.请将拉流地址中的流名（如 minutest000）改为两人1v1连线对端所用的推流名。在一人自测时，请改为左侧推流的流名。
       </span>
     </div>
   )
